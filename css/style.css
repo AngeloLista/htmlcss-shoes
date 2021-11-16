@@ -3,4 +3,82 @@
 	padding: 0;
 	box-sizing: border-box;
     font-family: 'Rubik Mono One', sans-serif;
+	scroll-behavior: smooth;
+}
+
+/* Generics */
+html {
+  overflow-y: hidden;
+}
+
+.fullpage {
+	height: 100vh;
+	position: relative;
+}
+
+
+/* Utilities */
+.yellow_text {
+	color: #ffff00;
+}
+
+.green_text {
+	color: #008000;
+}
+
+#red_page {
+	background-color: #ff0000;
+}
+
+#green_page {
+	background-color: #008000;
+}
+
+#yellow_page {
+	background-color: #ffff00;
+}
+
+
+/* Main Menu */
+#main_menu {
+	position: fixed;
+	right: 15px;
+	top: 30px;
+	z-index: 1;
+}
+
+#main_menu li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+#main_menu li a {
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 50%;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	margin: 10px 15px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Content */
+.content {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.content img {
+	width: 90%;
+}
+
+.content h1 {
+	font-size: 50px;
 }
